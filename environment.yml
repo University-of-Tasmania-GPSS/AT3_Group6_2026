@@ -1,0 +1,13 @@
+name: kgg375
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - geopandas
+  - rasterio
+  - matplotlib
+  - scipy
+  - ipykernel
+  - whitebox
+  - whitebox_tools
