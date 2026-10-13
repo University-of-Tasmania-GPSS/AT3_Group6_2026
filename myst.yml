@@ -1,0 +1,22 @@
+version: 1
+
+project:
+  id: 692fca6d-14d6-4ad1-a8f3-5ffc4717d3d5
+  title: Trail through the Cheyne Range
+  subtitle: Modelling a new walking track along the Cheyne Range, Tasmania
+  authors:
+    - name: Gabriel Pham
+    - name: Sanden Cook
+
+  toc:
+    - file: index.md
+
+    - title: Project
+      children:
+        - file: methods.md
+        - file: results.md
+        - file: discussion.md
+        - file: conclusion.md
+
+site:
+  template: book-theme
