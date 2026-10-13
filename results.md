@@ -6,11 +6,14 @@
 
 *Figure 3: Suitability for a walking track under WLC (left) and TOPSIS (right). White areas are excluded by constraints.*
 
+There are some key differences when comparing the WLC and the TOPSIS suitability maps. The main one being that TOPSIS tends to make the suitability score lean towards 0. This is becuase if one cell has a bad score it pulls the whole cell down. This is not the case for WLC as one bad score can be made up if the other criteria are scored highly. 
+Overall both suitability maps follow the same trends and the difference in routes will be shown in the next section.
+
 ## Routes
 
 ![Topographic map of the Cheyne Range study area](map_with_table.png)
 
-*Figure 1: Topographic map with routes shaded by cost. Base map: LISTmap, © State of Tasmania (CC BY 3.0 AU).*
+*Figure 4: Topographic map with routes shaded by cost. Base map: LISTmap, © State of Tasmania (CC BY 3.0 AU).*
 
 ![Routes over the suitability surface](routes_suitability.png)
 
@@ -19,3 +22,24 @@
 ![Close-up of the routes near Mount Gell](routes_closeup.png)
 
 *Figure 6: Close-up of where the routes meet near Mount Gell, passing between excluded (white) areas.*
+
+To decide which route we would use for further testing it was due to the lowerest cost but also which route looks like the most interesting trail. When the start point is Rufus Canal Road, the route passes the Chimera, goes over the Hippogriff and passes the Australian Tarn before finishing on Mount Gell.
+This is where the subjective portion of trail modeling comes into play. Although there are routes that are cheaper coming from different start points, people would be much more inclined to hike a trail that passes through multiple points of interest. It also gives the oppurtunity for more people of all hiking levels to use the trail. Some may not want to hike all the way to the top of Mt Gell but would prefer to only go up the Hippogriff or the Tarn. This trail gives that oppurtunity to everyone and will be used in further comparisons. 
+
+![WLC route from Rufus Canal Rd to Mount Gell](wlc_route.png)
+
+*Figure 7: Least-cost route from Rufus Canal Rd (right) to Mount Gell (left) on the WLC suitability surface, shown over shaded relief with 50 m contours.*
+
+![TOPSIS route from Rufus Canal Rd to Mount Gell](topsis_route.png)
+
+*Figure 8: The same route on the TOPSIS suitability surface.*
+
+## Sensitivity analysis
+
+To test how much the suitability surfaces depend on the AHP weights, both models were re-run with a second, vegetation-led set of weights (vegetation 0.445, wetland 0.262, streams 0.152, slope 0.089, access 0.052; consistency ratio 0.006).
+
+![Suitability under the original and vegetation-led weights](suitability_scenarios.png)
+
+*Figure 9: WLC (left) and TOPSIS (right) suitability under the original slope-led weights (top) and the vegetation-led weights (bottom). White areas are excluded by constraints.*
+
+This darastically changes how the suitabilty raster looks and will perform. The vegetation led weighting prioitizes the fragile alpine vegetation and causes the route to tend towards steeper ground. 

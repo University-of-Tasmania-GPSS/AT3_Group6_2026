@@ -22,10 +22,7 @@ All datasets were clipped to a 17.5 × 13.5 km study area (the start, end and su
 Threatened vegetation communities were identified by matching TASVEG 5.0 communities against Schedule 3A of the *Nature Conservation Act 2002* (Tas).
 
 **Data limitations:**
-- Approximately 65% of the statewide DEM is derived from LiDAR. The remainder is interpolated from photogrammetric contours and spot heights, with an effective resolution of 10 m
 - TASVEG and threatened community mapping are indicative only and would require field verification.
-
-LIST data © State of Tasmania, licensed under Creative Commons Attribution 3.0 Australia.
 
 ## Workflow overview
 The analysis was written in Python, with each step saved as a raster on a common 10 m grid so the next step can read it. The scripts and notebooks are in the GitHub repository.
