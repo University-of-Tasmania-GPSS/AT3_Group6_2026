@@ -10,7 +10,6 @@ project:
 
   toc:
     - file: index.md
-    - file: dem_3d.html
 
     - title: Project
       children:
