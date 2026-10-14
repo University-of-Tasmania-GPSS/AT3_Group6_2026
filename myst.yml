@@ -20,7 +20,3 @@ project:
 
 site:
   template: book-theme
-
-sphinx:
-     config:
-       html_extra_path: ["dem_3d.html"]
