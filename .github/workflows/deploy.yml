@@ -39,10 +39,13 @@ jobs:
         run: npm install -g jupyter-book
       - name: Build HTML Assets
         run: jupyter-book build --html
+      - name: Copy 3D map into site
+        run: cp dem_3d.html _build/html/dem_3d.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: './_build/html'
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
