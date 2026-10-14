@@ -25,5 +25,5 @@ Objectives:
 
 
 ```{raw} html
-<iframe src="_static/dem_3d.html" width="100%" height="600" style="border:0"></iframe>
+<iframe src="dem_3d.html" width="100%" height="600" style="border:0"></iframe>
 ```
