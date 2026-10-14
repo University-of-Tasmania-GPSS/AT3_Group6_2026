@@ -27,15 +27,10 @@ KGG375 GIS Project (AT3) – Group 6 – University of Tasmania, 2026
 | Path | Contents |
 |---|---|
 | `index.md`, `methods.md`, `results.md`, `discussion.md`, `conclusion.md` | The Jupyter Book pages (Introduction, Methods, Results, Discussion, Conclusion) |
-| `myst.yml` | Jupyter Book configuration: title, authors and table of contents |
-| `.github/workflows/deploy.yml` | GitHub Actions workflow that builds the book and publishes it to GitHub Pages on every push to `main` |
-| `*.png`, `*.jpg` | Figures used in the Jupyter Book |
 | `dem_3d.html` | Interactive 3D view of the DEM, embedded on the Introduction page |
 | `scripts/04_criteria.py` | Builds the five suitability criteria (0–1) and the constraint mask |
 | `scripts/05_suitability.py` | AHP weights, then WLC and TOPSIS suitability surfaces |
 | `walking_cost.ipynb` | Slope and aspect (WhiteboxTools), direction-aware movement cost and Dijkstra least-cost routes |
-| `MCDA.ipynb`, `track_roadprocessing.ipynb`, `TASVEGprocessing.ipynb` | Working notebooks |
-| `jupyter_book.ipynb` | Earlier single-notebook draft of the write-up (replaced by the `.md` pages) |
 | `data/raw/list/` | LIST vector data: TASVEG 5.0, hydrographic lines and areas, transport segments |
 | `data/raw/points/` | Start/end access points and summits (created in ArcGIS Pro) |
 | `data/processed/` | 10 m DEM, slope, the constraint mask (`constraints.tif`) and the WLC and TOPSIS suitability rasters |
