@@ -11,5 +11,16 @@ Another approach could also be to use a different weighting method. In this proj
 
 The way the suitability score is calculated can also be changed. In this project we chose to make two rasters using WLC and TOPSIS. This was because these two methods are what we are familiar with. A different method to producing a suitability raster could be used which would handle the weights differently and produce an alternative raster.
 
+Another factor that we did not explore fully is combining different routes to force the trail to go to different peaks. This was explored and we made the code for it but decided that it was exiting the scope of the current project. By combining routes it could potentially create multiday trails through the range for epic days out. We decided that we would not have the time to complete comparisons between these routes as it would be handling a lot more data and more judgement calls. 
+
+We also only used one method of path optimisation which was Dijkstra. Another method we could of used would have been A*. By utilising another path optimisation method we could have made further comparisons on the routes. 
+
 ## Limitations
 
+Some limitations of the project start at the data we used. The DEM we used was resampled to the 10 metre level so that processing routes would become more efficient. The downside to doing this is that the slope and routes can be incorrect at a more detailed scale. This could be solved by using the 1 metre or 2 metre DEM.
+
+The TASVEG data set is mapped at a large scale as well, so small patches of vegetation can be missed or misplaced. My constraints are assuming that this dataset is the truth and avoiding where it says the threatened veg is. This would have to be field checked to ensure that what we are assuming to be true actually is.
+
+The hydrogaphy data set also misses small features such as seasonal streams. This are not incorportaed into the model and routes may traverse through here. A method to avoid this would be to create a model of water streams that would map where seasonal water is likely to be and then get the hydrogaphy lines from this dataset.
+
+The weights in the AHP table are subjective and based on our judgement. Thus, the suitibility raster is also entirely based on how we judged the weights. 

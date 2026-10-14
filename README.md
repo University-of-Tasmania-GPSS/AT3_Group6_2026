@@ -58,6 +58,3 @@ All spatial data is in GDA2020 / MGA Zone 55 (EPSG:7855) on a 10 m grid.
    ```
    `04_criteria.py` recreates `data/processed/criteria/` and `constraints.tif`, which `05_suitability.py` needs. Copies of these outputs are already included in the repository.
 
-## AI usage
-
-[Describe how AI tools were used.]
