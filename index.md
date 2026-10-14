@@ -12,10 +12,12 @@ Tasmania is filled with beautiful scenery and untouched wilderness. This include
 *Walkers on the Cheyne Range. Photo: © Louise Fairfax.*
 
 ## Background
-Off-track walking in places like the Cheyne Range creates informal trails called "pads". These tend to widen and erode over time especially on fragile alpine vegetation (Whinam & Chilcott, 2003; Dixon et al., 2004). A planned hardened track can protect the surrounding landscape. Deciding where to put this track requires the weighing of many environmental factors at once such as slope and vegetation type. MCDA is currently the standard way to combine environmental factors into a suitability map in which we will be using WLC and TOPSIS. To weight the criteria we used AHP.
+Off-track walking in places like the Cheyne Range creates informal trails called "pads". These tend to widen and erode over time especially on fragile alpine vegetation (Whinam & Chilcott, 2003; Dixon et al., 2004). the Chenye range is home to many threatened vegetation features such as populations of pencil pines (Athrotaxis cupressoides) and King Billy (Athrotaxis selaginoides) alongside blanket bogs that form a recognised conservation value in the Tasmanian Wilderness World Heritage Area (TWWHA), these are composed primarily of Buttongrass plains alongside sphagnum bogs. This area is also the site of a glacial valley of geo-conservation signifgence which forms part of the Tasmanian Geoconservation Database.
+
+A planned hardened track can protect the surrounding landscape, this can be implemented through installing raised track features or avoiding vegetation and soil types prone to degrading. Deciding where to put this track requires the weighing of many environmental factors at once such as slope and vegetation type. MCDA is currently the standard way to combine environmental factors into a suitability map in which we will be using WLC and TOPSIS. To weight the criteria we used AHP.
 
 ## Objectives
-The aim of this project is to model and compare optimal trails that go through the Cheyne range which weighs all the environmental factors to find the best fit.
+The aim of this project is to model and compare optimal trails that go through the Cheyne range which weighs key environmental factors, and walking cost to find the optimal route for multiple start locations.
 
 Objectives:
 1. Develop and compare two suitability models for a walking track using different decision rules (WLC and TOPSIS)
