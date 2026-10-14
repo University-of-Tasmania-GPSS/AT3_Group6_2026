@@ -4,6 +4,8 @@
 
 The main hurdle on the criteria and suitability side of the project was deciding what to use and how it should be weighted. This came from looking to past reasearch and finding threatened vegetation and past modelling / pathfinding literature.
 
+another key hurdle was data processing, pathfinding algorithms are computationally intensive, one way this was managed was to reduce a the dem from a 1m dem to a 10m dem, this should still be appropriate for a walking trail, particularly one covering over 10km. 
+
 ## Alternative approaches
 Alternative approaches include using different criteria and contraints. We chose the ones that we thought to be most important and that were backed up by literature. It can be made more comprehensive if we added more criteria into the suitability.
 
