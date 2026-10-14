@@ -24,7 +24,7 @@ Objectives:
 4. Compare and visualise the resulting routes using maps and elevation profiles.
 
 
-:::{iframe} dem_3d.html
+:::{iframe} https://cdn.jsdelivr.net/gh/University-of-Tasmania-GPSS/AT3_Group6_2026@main/dem_3d.html
 :width: 100%
 :height: 600px
 :::
