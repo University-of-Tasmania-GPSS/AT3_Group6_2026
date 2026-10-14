@@ -24,6 +24,7 @@ Objectives:
 4. Compare and visualise the resulting routes using maps and elevation profiles.
 
 
-```{raw} html
-<iframe src="dem_3d.html" width="100%" height="600" style="border:0"></iframe>
-```
+:::{iframe} dem_3d.html
+:width: 100%
+:height: 600px
+:::
