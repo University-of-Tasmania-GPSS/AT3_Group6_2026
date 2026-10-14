@@ -1,12 +1,12 @@
 # Conclusion
 
-We combined 5 environmental criteria with AHP weights to form 2 suitibility rasters, then used a direction aware least-cost path to find track routes in the Cheyne Range.
+We combined 5 environmental criteria with AHP weights to form 2 suitability rasters, then used a direction aware least-cost path to find track routes in the Cheyne Range.
 
-Both suitability rasters showed the same overall pattern of the environment with the exception of TOPSIS scores everything lower. This beucase one low criterion pulls the whole cell down.
+Both suitability rasters showed the same overall pattern of the environment with the exception of TOPSIS scores everything lower. This is because one low criterion pulls the whole cell down.
 
-The routes from different start points all make it Mount Gell while avoiding steep and threatened vegetation areas and the cost of each path can be calculated and compared.
+The routes from different start points all make it to Mount Gell while avoiding steep and threatened vegetation areas and the cost of each path can be calculated and compared.
 
-This is only the starting point for if real trail planning were to begin. Many aspects would need to be checked in the field before trusting this path optimisation. Although, it does show how a planned track can replace the current informal pads which are much more susceptible erosion and can damage the fragile ecosystem around them.
+This is only the starting point for if real trail planning were to begin. Many aspects would need to be checked in the field before trusting this path optimisation. Although, it does show how a planned track can replace the current informal pads which are much more susceptible to erosion and can damage the fragile ecosystem around them.
 
 ## References
 

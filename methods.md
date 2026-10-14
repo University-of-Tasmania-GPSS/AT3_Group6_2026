@@ -43,9 +43,9 @@ The analysis was written in Python, with each step saved as a raster on a common
 | matplotlib | Maps and figures |
 
 ## Suitability criteria and constraints
-The criteria is scored 0 to 1 with 1 being ideal.
+The criteria are scored 0 to 1 with 1 being ideal.
 
-- **Slope:** derived from the DEM starts at 1 up to 10 degrees then linearly falls to 0 at 30 degrees.
+- **Slope:** derived from the DEM starts at 1 up to 10 degrees then linearly falls to 0 at 30 degrees (Olive & Marion, 2009).
 - **Vegetation:** derived from TASVEG 5.0, this is scored by individual vegetation groups.
   - Modified land: 1.0
   - Dry Eucalypt Forest and woodland: 0.9
@@ -62,10 +62,10 @@ The criteria is scored 0 to 1 with 1 being ideal.
 - **Access:** Derived from transport segments. 1 on a road or track.
 
 Constraints:
-- **Lakes and Tarns:** Track can not go over open water
+- **Lakes and Tarns:** Track cannot go over open water
 - **Pencil Pine and King Billy Pine:** Threatened Vegetation
 - **Sphagnum Peatland:** Threatened Vegetation
-- **Cushioned Moorland, Highland Poa Grassland, Subalpine rushland:** threatened Vegetation
+- **Cushion Moorland, Highland Poa Grassland, Subalpine rushland:** threatened Vegetation
 - **Steep Ground:** Slope > 35 degrees
 
 Each criterion is rescaled to 0–1 with a simple linear function. For example, slope and distance to streams:
@@ -82,7 +82,7 @@ stream_score = np.clip((stream_distance - 30) / (100 - 30), 0, 1)
 `np.clip` keeps the scores between 0 and 1, and `distance_transform_edt` gives the distance from every cell to the nearest stream cell.
 
 ## Criteria weights (AHP)
-The comparison matrix we chose to use is AHP. This uses a table with all the criteria ranked against each other on a scale of 1-9. It describes how much more important a row criterion is than the column criterion on Saaty's Scale. On the scale 1 means equal, 3 is moderate and 5 is strong. The scale goes up to 9 which is extreme but none of our criteria needs to be that strong over another. For example, Slope vs. Access, Slope is given a 5 over access because access is only a convenience while slope decides sustainability as well as how well the trail can be walked.
+The comparison matrix we chose to use is AHP. This uses a table with all the criteria ranked against each other on a scale of 1-9. It describes how much more important a row criterion is than the column criterion on Saaty's Scale (Saaty, 1980). On the scale 1 means equal, 3 is moderate and 5 is strong. The scale goes up to 9 which is extreme but none of our criteria needs to be that strong over another. For example, Slope vs. Access, Slope is given a 5 over access because access is only a convenience while slope decides sustainability as well as how well the trail can be walked.
 The script then takes this table and scales it to sum to 1.
 
 - Slope: 0.407
@@ -136,9 +136,9 @@ $C$ is 1 for a cell that matches the ideal on every criterion and 0 for a cell t
 
 ## Movement cost
 
-movement cost was from a simple hiking cost fourmula where slope cost was based on the degrees*0.1 where slope was positive eg. 30 degrees has a cost weight of 0.3 and for negitive slopes the cost was assigned degrees*0.01 which makes downhill impact walking speed/effort less
+movement cost was from a simple hiking cost formula where slope cost was based on the degrees*0.1 where slope was positive eg. 30 degrees has a cost weight of 0.3 and for negative slopes the cost was assigned degrees*0.01 which makes downhill impact walking speed/effort less
 
-importanly these implement a direction modifier which calculates the walkers apparrent slope rather then the global slope values, making this a anisotropic cost surface.
+importantly these implement a direction modifier which calculates the walkers apparent slope rather than the global slope values, making this an anisotropic cost surface.
 
 ```python
 # -1 when walking straight uphill, 1 when walking straight downhill
@@ -154,9 +154,9 @@ else:  # downhill or across the slope
 
 ## Path optimisation
 
-for path optimisation Dijkstra algorithm was used, this finds the shortest path by slowly extending the, search and prioritising the least cost path to each node
+for path optimisation Dijkstra algorithm was used, this finds the shortest path by slowly extending the search and prioritising the least cost path to each node
 
-due to the limitations of python and data storage the anisotropic cost surface does not exist in iteslf instead it is defined in the least cost path algorithm process, where the pathfinding can input the direction and calculate the cost.
+due to the limitations of python and data storage the anisotropic cost surface does not exist in itself instead it is defined in the least cost path algorithm process, where the pathfinding can input the direction and calculate the cost.
 
 The key step is where each move to a neighbouring cell is costed. Constraint cells are skipped, and the walking cost is increased on less suitable ground:
 
