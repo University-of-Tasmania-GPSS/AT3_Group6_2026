@@ -16,7 +16,7 @@ Off-track walking in places like the Cheyne Range creates informal trails called
 
 A planned hardened track can protect the surrounding landscape, this can be implemented through installing raised track features or avoiding vegetation and soil types prone to degrading. Deciding where to put this track requires the weighing of many environmental factors at once such as slope and vegetation type. MCDA is currently the standard way to combine environmental factors into a suitability map in which we will be using WLC and TOPSIS. To weight the criteria we used AHP.
 
-```{image} buttongrass_and_mud.jpg
+```{image} buttongrass_and_mud.jpeg
 :alt: Walkers knee deep in mud surrounded by button-grass
 ```
 
