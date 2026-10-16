@@ -13,7 +13,7 @@ Another approach could also be to use a different weighting method. In this proj
 
 The way the suitability score is calculated can also be changed. In this project we chose to make two rasters using WLC and TOPSIS. This was because these two methods are what we are familiar with. A different method to producing a suitability raster could be used which would handle the weights differently and produce an alternative raster.
 
-Another factor that we did not explore fully is combining different routes to force the trail to go to different peaks. This was explored and we made the code for it but decided that it was beyond the scope of the current project. By combining routes it could potentially create multiday trails through the range for epic days out. We decided that we would not have the time to complete comparisons between these routes as it would be handling a lot more data and more judgement calls. 
+Another factor that we did not explore fully is combining different routes to force the trail to go to different peaks. This was explored and we made the code for it but decided that it was beyond the scope of the current project. By combining routes it could potentially create multiday trails through the range for epic days out. We decided that we would not have the time to complete comparisons between these routes as it would be handling a lot more data and more judgement calls. This would also create the possiblity for a circut style trail rather then a out and back or through hike.
 
 We also only used one method of path optimisation which was Dijkstra. Another method we could have used would have been A*. By utilising another path optimisation method we could have made further comparisons on the routes. 
 
